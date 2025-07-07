@@ -21,7 +21,7 @@ async function getUser(request: NextRequest) {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const user = await getUser(request)
@@ -36,9 +36,10 @@ export async function GET(
     // Initialize database
     await sqlite.init()
 
+    const { id } = await params
     const book = await sqlite.get(
       'SELECT * FROM books WHERE id = ? AND userId = ?',
-      [params.id, user.userId]
+      [id, user.userId]
     )
 
     if (!book) {
@@ -60,7 +61,7 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const user = await getUser(request)
@@ -77,10 +78,11 @@ export async function PUT(
     // Initialize database
     await sqlite.init()
 
+    const { id } = await params
     // Check if book exists and belongs to user
     const existingBook = await sqlite.get(
       'SELECT * FROM books WHERE id = ? AND userId = ?',
-      [params.id, user.userId]
+      [id, user.userId]
     )
 
     if (!existingBook) {
@@ -92,12 +94,12 @@ export async function PUT(
 
     await sqlite.run(
       'UPDATE books SET title = ?, author = ?, isbn = ?, description = ?, genre = ?, status = ?, rating = ?, notes = ?, updatedAt = CURRENT_TIMESTAMP WHERE id = ?',
-      [title, author, isbn, description, genre, status, rating, notes, params.id]
+      [title, author, isbn, description, genre, status, rating, notes, id]
     )
 
     const book = await sqlite.get(
       'SELECT * FROM books WHERE id = ?',
-      [params.id]
+      [id]
     )
 
     return NextResponse.json({ book })
@@ -112,7 +114,7 @@ export async function PUT(
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     const user = await getUser(request)
@@ -127,10 +129,11 @@ export async function DELETE(
     // Initialize database
     await sqlite.init()
 
+    const { id } = await params
     // Check if book exists and belongs to user
     const existingBook = await sqlite.get(
       'SELECT * FROM books WHERE id = ? AND userId = ?',
-      [params.id, user.userId]
+      [id, user.userId]
     )
 
     if (!existingBook) {
@@ -142,7 +145,7 @@ export async function DELETE(
 
     await sqlite.run(
       'DELETE FROM books WHERE id = ?',
-      [params.id]
+      [id]
     )
 
     return NextResponse.json({ message: 'Book deleted successfully' })

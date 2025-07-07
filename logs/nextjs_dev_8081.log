@@ -1,0 +1,390 @@
+[2025-07-04 14:16:14] 📦 已复制依赖包到: /Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/node_modules.tar.gz
+[2025-07-04 14:16:19] ✅ 解压完成，依赖初步准备完毕
+[2025-07-04 14:16:19] 📦 修复依赖 via npm install...
+[2025-07-04 14:17:14] ✅ npm install 成功
+[2025-07-04 14:17:14] Starting development server on port 8081...
+[2025-07-04 14:17:14] Waiting for server to start listening...
+   ▲ Next.js 15.3.4
+   - Local:        http://localhost:8081
+   - Network:      http://10.1.202.191:8081
+   - Environments: .env
+
+ ✓ Starting...
+[2025-07-04 14:17:17] Server started on port 8081 after 3 seconds
+[2025-07-04 14:17:17] Server is listening. Waiting for initial compilation...
+ ✓ Ready in 1689ms
+[2025-07-04 14:17:26] Saving deploy_info.json to /Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A
+[2025-07-04 14:17:26] Deploy info saved to /Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/deploy_info.json
+[2025-07-04 14:17:26] 
+=== Final Result ===
+[2025-07-04 14:17:26] {
+  "success": true,
+  "message": "Frontend project started successfully.",
+  "deploy_pid": 34349,
+  "deploy_port": 8081,
+  "deploy_url": "http://10.1.202.191:8081",
+  "deploy_domain": "http://107.167.18.110:8081",
+  "project_path": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A",
+  "log_file": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/logs/nextjs_dev_8081.log",
+  "note": "Server may still be compiling. Wait a bit longer if you get timeouts.",
+  "deploy_info_path": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/deploy_info.json"
+}
+ ○ Compiling / ...
+ ✓ Compiled / in 6.2s (814 modules)
+ GET / 200 in 6435ms
+ ✓ Compiled in 278ms (346 modules)
+ GET / 200 in 63ms
+ ⚠ Cross origin request detected from 10.1.202.191 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /favicon.ico in 245ms (466 modules)
+ GET /favicon.ico 200 in 317ms
+ GET / 200 in 81ms
+ ✓ Compiled /auth/register in 341ms (813 modules)
+ GET /auth/register 200 in 392ms
+ ✓ Compiled /api/auth/register in 369ms (902 modules)
+ ⨯ Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at eval (lib/db.ts:7:48)
+    at <unknown> (rsc)/./lib/db.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/auth/register/route.js:22:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at eval (webpack-internal:///(rsc)/./src/app/api/auth/register/route.ts:8:65)
+    at <unknown> (rsc)/./src/app/api/auth/register/route.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/auth/register/route.js:65:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_exec__ (.next/server/app/api/auth/register/route.js:195:39)
+    at <unknown> (.next/server/app/api/auth/register/route.js:196:553)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:168:21)
+    at <unknown> (.next/server/app/api/auth/register/route.js:196:47)
+    at Object.<anonymous> (.next/server/app/api/auth/register/route.js:199:3)
+  5 | }
+  6 |
+> 7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient()
+    |                                                ^
+  8 |
+  9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma {
+  page: '/api/auth/register'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 876ms (1236 modules)
+ GET / 200 in 443ms
+ GET /auth/register 200 in 445ms
+ GET / 200 in 19ms
+ GET /auth/register 200 in 20ms
+ POST /api/auth/register 500 in 1723ms
+ ⨯ Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at eval (lib/db.ts:7:48)
+    at <unknown> (rsc)/./lib/db.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/auth/register/route.js:22:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at eval (webpack-internal:///(rsc)/./src/app/api/auth/register/route.ts:8:65)
+    at <unknown> (rsc)/./src/app/api/auth/register/route.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/auth/register/route.js:65:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_exec__ (.next/server/app/api/auth/register/route.js:195:39)
+    at <unknown> (.next/server/app/api/auth/register/route.js:196:553)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:168:21)
+    at <unknown> (.next/server/app/api/auth/register/route.js:196:47)
+    at Object.<anonymous> (.next/server/app/api/auth/register/route.js:199:3)
+  5 | }
+  6 |
+> 7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient()
+    |                                                ^
+  8 |
+  9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma {
+  page: '/api/auth/register'
+}
+ POST /api/auth/register 500 in 232ms
+ GET /auth/register 200 in 33ms
+ ✓ Compiled in 608ms (599 modules)
+ GET /auth/register 200 in 45ms
+ GET /auth/register 200 in 47ms
+ ✓ Compiled in 367ms (1103 modules)
+ GET /auth/register 200 in 122ms
+ GET /auth/register 200 in 123ms
+ ✓ Compiled in 86ms (599 modules)
+ GET /auth/register 200 in 21ms
+ GET /auth/register 200 in 22ms
+ ✓ Compiled in 182ms (599 modules)
+ GET /auth/register 200 in 48ms
+ GET /auth/register 200 in 50ms
+ ✓ Compiled in 224ms (599 modules)
+ GET /auth/register 200 in 90ms
+ GET /auth/register 200 in 100ms
+ ✓ Compiled in 98ms (599 modules)
+ GET /auth/register 200 in 78ms
+ GET /auth/register 200 in 82ms
+ ✓ Compiled in 490ms (599 modules)
+ GET /auth/register 200 in 68ms
+ GET /auth/register 200 in 68ms
+ ✓ Compiled /api/auth/register in 408ms (606 modules)
+ GET /auth/register 200 in 1719ms
+ GET /auth/register 200 in 1721ms
+ POST /api/auth/register 200 in 2163ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 746ms (1244 modules)
+ GET /dashboard 200 in 802ms
+ GET /auth/register 200 in 79ms
+ GET /dashboard 200 in 18ms
+ ✓ Compiled /api/books in 173ms (1234 modules)
+ ⨯ Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at eval (lib/db.ts:7:48)
+    at <unknown> (rsc)/./lib/db.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/books/route.js:22:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at eval (webpack-internal:///(rsc)/./src/app/api/books/route.ts:8:65)
+    at <unknown> (rsc)/./src/app/api/books/route.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/books/route.js:65:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_exec__ (.next/server/app/api/books/route.js:195:39)
+    at <unknown> (.next/server/app/api/books/route.js:196:528)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:168:21)
+    at <unknown> (.next/server/app/api/books/route.js:196:47)
+    at Object.<anonymous> (.next/server/app/api/books/route.js:199:3)
+  5 | }
+  6 |
+> 7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient()
+    |                                                ^
+  8 |
+  9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma {
+  page: '/api/books'
+}
+ ✓ Compiled /_error in 171ms (1277 modules)
+ GET /api/books 500 in 656ms
+ ⨯ Error: @prisma/client did not initialize yet. Please run "prisma generate" and try to import it again.
+    at eval (lib/db.ts:7:48)
+    at <unknown> (rsc)/./lib/db.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/books/route.js:22:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at eval (webpack-internal:///(rsc)/./src/app/api/books/route.ts:8:65)
+    at <unknown> (rsc)/./src/app/api/books/route.ts (/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/.next/server/app/api/books/route.js:65:1)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_require__ (.next/server/webpack-runtime.js:33:43)
+    at __webpack_exec__ (.next/server/app/api/books/route.js:195:39)
+    at <unknown> (.next/server/app/api/books/route.js:196:528)
+    at __webpack_require__.X (.next/server/webpack-runtime.js:168:21)
+    at <unknown> (.next/server/app/api/books/route.js:196:47)
+    at Object.<anonymous> (.next/server/app/api/books/route.js:199:3)
+  5 | }
+  6 |
+> 7 | export const prisma = globalForPrisma.prisma ?? new PrismaClient()
+    |                                                ^
+  8 |
+  9 | if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma {
+  page: '/api/books'
+}
+ GET /api/books 500 in 260ms
+ ✓ Compiled in 333ms (1289 modules)
+ GET /dashboard 200 in 110ms
+ GET /auth/register 200 in 134ms
+ ✓ Compiled /books in 266ms (1288 modules)
+ GET /books 200 in 313ms
+Get books error: ReferenceError: prisma is not defined
+    at GET (src/app/api/books/route.ts:33:18)
+  31 |     }
+  32 |
+> 33 |     const books = await prisma.book.findMany({
+     |                  ^
+  34 |       where: { userId: user.userId },
+  35 |       orderBy: { createdAt: 'desc' }
+  36 |     })
+ GET /api/books 500 in 55ms
+Get books error: ReferenceError: prisma is not defined
+    at GET (src/app/api/books/route.ts:33:18)
+  31 |     }
+  32 |
+> 33 |     const books = await prisma.book.findMany({
+     |                  ^
+  34 |       where: { userId: user.userId },
+  35 |       orderBy: { createdAt: 'desc' }
+  36 |     })
+ GET /api/books 500 in 31ms
+ ✓ Compiled /ai-assistant in 221ms (1303 modules)
+ GET /ai-assistant 200 in 253ms
+Get books error: ReferenceError: prisma is not defined
+    at GET (src/app/api/books/route.ts:33:18)
+  31 |     }
+  32 |
+> 33 |     const books = await prisma.book.findMany({
+     |                  ^
+  34 |       where: { userId: user.userId },
+  35 |       orderBy: { createdAt: 'desc' }
+  36 |     })
+ GET /api/books 500 in 32ms
+Get books error: ReferenceError: prisma is not defined
+    at GET (src/app/api/books/route.ts:33:18)
+  31 |     }
+  32 |
+> 33 |     const books = await prisma.book.findMany({
+     |                  ^
+  34 |       where: { userId: user.userId },
+  35 |       orderBy: { createdAt: 'desc' }
+  36 |     })
+ GET /api/books 500 in 21ms
+ ✓ Compiled /profile in 205ms (1314 modules)
+ GET /profile 200 in 234ms
+ ✓ Compiled /help in 208ms (1325 modules)
+ GET /help 200 in 242ms
+ ○ Compiling /feedback ...
+ ✓ Compiled /feedback in 622ms (1348 modules)
+ GET /feedback 200 in 741ms
+ GET /auth/register 200 in 121ms
+ GET /feedback 200 in 68ms
+ GET /dashboard 200 in 13ms
+ GET /api/books 200 in 18ms
+ GET /api/books 200 in 4ms
+ GET /ai-assistant 200 in 10ms
+ GET /api/books 200 in 5ms
+ GET /api/books 200 in 3ms
+ GET /feedback 200 in 22ms
+ GET /ai-assistant 200 in 6ms
+ GET /api/books 200 in 8ms
+ GET /api/books 200 in 4ms
+ GET /profile 200 in 12ms
+ GET /help 200 in 9ms
+ GET /ai-assistant 200 in 22ms
+ GET /api/books 200 in 804ms
+ GET /ai-assistant 200 in 373ms
+ ✓ Compiled in 1717ms (1348 modules)
+ ✓ Compiled in 0ms (708 modules)
+ ✓ Compiled in 0ms (708 modules)
+ ✓ Compiled in 0ms (708 modules)
+ GET /api/books 200 in 1543ms
+ GET /ai-assistant 200 in 932ms
+ GET /auth/register 200 in 933ms
+ ○ Compiling /api/ai/chat ...
+ ✓ Compiled /api/ai/chat in 667ms (1336 modules)
+ POST /api/ai/chat 200 in 2360ms
+ POST /api/ai/chat 200 in 1740ms
+ POST /api/ai/chat 200 in 1549ms
+ GET /books 200 in 44ms
+ GET /api/books 200 in 13ms
+ GET /api/books 200 in 4ms
+ GET /dashboard 200 in 32ms
+ GET /api/books 200 in 10ms
+ GET /api/books 200 in 3ms
+ ✓ Compiled in 230ms (639 modules)
+ GET /dashboard 200 in 50ms
+ GET /auth/register 200 in 57ms
+ GET /books 200 in 6ms
+ GET /api/books 200 in 5ms
+ GET /api/books 200 in 6ms
+ GET /ai-assistant 200 in 14ms
+ GET /api/books 200 in 5ms
+ GET /api/books 200 in 4ms
+ POST /api/ai/chat 200 in 1619ms
+ ✓ Compiled in 150ms (639 modules)
+ GET /ai-assistant 200 in 58ms
+ GET /auth/register 200 in 64ms
+ GET /books 200 in 10ms
+ GET /api/books 200 in 9ms
+ GET /api/books 200 in 7ms
+ ✓ Compiled in 255ms (639 modules)
+ GET /books 200 in 106ms
+ GET /auth/register 200 in 123ms
+ ✓ Compiled in 127ms (639 modules)
+ GET /auth/register 200 in 29ms
+ GET /books 200 in 31ms
+ POST /api/books 200 in 7ms
+ GET /api/books 200 in 2ms
+ GET /ai-assistant 200 in 9ms
+ GET /api/books 200 in 6ms
+ GET /api/books 200 in 3ms
+ POST /api/ai/chat 200 in 2064ms
+ GET /profile 200 in 15ms
+ ✓ Compiled in 153ms (639 modules)
+ GET /profile 200 in 33ms
+ GET /auth/register 200 in 36ms
+ GET /feedback 200 in 10ms
+ ○ Compiling /api/feedback ...
+ ✓ Compiled /api/feedback in 690ms (1289 modules)
+ POST /api/feedback 200 in 758ms
+ GET /feedback 200 in 63ms
+ GET /auth/register 200 in 64ms
+[?25h
+[2025-07-04 14:26:48] 🛑 跳过依赖安装（install_deps=False）
+[2025-07-04 14:26:48] Starting development server on port 8081...
+[2025-07-04 14:26:48] Waiting for server to start listening...
+[2025-07-04 14:26:49] Server started on port 8081 after 1 seconds
+[2025-07-04 14:26:49] Server is listening. Waiting for initial compilation...
+   ▲ Next.js 15.3.4
+   - Local:        http://localhost:8081
+   - Network:      http://10.1.202.191:8081
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 3.9s
+[2025-07-04 14:26:58] Saving deploy_info.json to /Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A
+[2025-07-04 14:26:58] Deploy info saved to /Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/deploy_info.json
+[2025-07-04 14:26:58] 
+=== Final Result ===
+[2025-07-04 14:26:58] {
+  "success": true,
+  "message": "Frontend project started successfully.",
+  "deploy_pid": 36348,
+  "deploy_port": 8081,
+  "deploy_url": "http://10.1.202.191:8081",
+  "deploy_domain": "http://107.167.18.110:8081",
+  "project_path": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A",
+  "log_file": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/logs/nextjs_dev_8081.log",
+  "note": "Server may still be compiling. Wait a bit longer if you get timeouts.",
+  "deploy_info_path": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/deploy_info.json"
+}
+ ○ Compiling /help ...
+ ✓ Compiled /profile in 4.9s (829 modules)
+ GET /profile 200 in 3308ms
+ GET /help 200 in 5110ms
+ GET /help 200 in 13ms
+ GET /help 200 in 11ms
+ GET /help 200 in 5ms
+ GET /help 200 in 7ms
+ GET /help 200 in 6ms
+ GET /help 200 in 167ms
+ ⚠ Cross origin request detected from 10.1.202.191 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled /api/auth/me in 201ms (484 modules)
+ ✓ Compiled in 151ms (348 modules)
+ GET /favicon.ico 200 in 604ms
+ GET /api/auth/me 200 in 530ms
+ GET /profile 200 in 37ms
+ ✓ Compiled /ai-assistant in 173ms (933 modules)
+ GET /ai-assistant 200 in 223ms
+ ✓ Compiled /api/books in 152ms (935 modules)
+ GET /api/books 200 in 186ms
+ GET /api/books 200 in 5ms
+ ✓ Compiled /books in 428ms (950 modules)
+ GET /books 200 in 457ms
+ GET /api/books 200 in 16ms
+ GET /api/books 200 in 6ms
+ ✓ Compiled /dashboard in 181ms (963 modules)
+ GET /dashboard 200 in 214ms
+ GET /api/books 200 in 13ms
+ GET /api/books 200 in 4ms
+ GET /books 200 in 8ms
+ GET /api/books 200 in 11ms
+ GET /api/books 200 in 5ms
+ GET /dashboard 200 in 6ms
+ GET /api/books 200 in 6ms
+ GET /api/books 200 in 6ms
+ GET /ai-assistant 200 in 27ms
+ GET /api/books 200 in 8ms
+ GET /api/books 200 in 11ms
+ GET /dashboard 200 in 6ms
+ GET /api/books 200 in 19ms
+ GET /api/books 200 in 5ms
+ GET /books 200 in 6ms
+ GET /api/books 200 in 6ms
+ GET /api/books 200 in 4ms
+ GET /dashboard 200 in 9ms
+ GET /api/books 200 in 6ms
+ GET /api/books 200 in 4ms
+ GET /ai-assistant 200 in 247ms
+ GET /api/books 200 in 39ms
+ GET /api/books 200 in 4ms
+ GET /profile 200 in 40ms
+ ○ Compiling /feedback ...
+ ✓ Compiled /feedback in 1390ms (962 modules)
+ GET /feedback 200 in 1490ms
+ GET /help 200 in 372ms
+ GET /feedback 200 in 27ms
+ GET /help 200 in 103ms
+ ✓ Compiled /api/auth/me in 253ms (595 modules)
+ ✓ Compiled (597 modules)
+ GET /favicon.ico 200 in 395ms
+ GET /api/auth/me 200 in 386ms
+ GET /help 200 in 60ms

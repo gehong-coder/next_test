@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "message": "Frontend project started successfully.",
+  "deploy_pid": 36348,
+  "deploy_port": 8081,
+  "deploy_url": "http://10.1.202.191:8081",
+  "deploy_domain": "http://107.167.18.110:8081",
+  "project_path": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A",
+  "log_file": "/Users/mobvoi/Documents/cursor/code19/codemonkey/services/auto_claude_app/examples/IGMTYXL5YHNONAZWNJ1Q8A/logs/nextjs_dev_8081.log",
+  "note": "Server may still be compiling. Wait a bit longer if you get timeouts."
+}
